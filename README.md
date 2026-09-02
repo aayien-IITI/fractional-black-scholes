@@ -11,6 +11,14 @@ ambiguous or where a literal transcription would be wrong), the module
 interface contracts, the build order with stopping tests, and the division
 of work between the two of us.
 
+**Then read [docs/validation_report.md](docs/validation_report.md).** The
+paper's printed closed-form coefficients for the main time-stepping update
+(eqs. 3.11-3.12) turned out to be numerically unstable and inconsistent with
+the paper's own underlying discretization; the report documents the
+corrected closed form actually implemented in `src/`, the evidence behind
+it, and one discrepancy (at alpha=1, against the analytic solution at fixed
+grid resolution) that remains open.
+
 ## Setup
 
 ```bash
